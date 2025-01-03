@@ -8344,6 +8344,10 @@ h1, h2, h3, h4, h5,
   .ftco-navbar-light .navbar-nav > .nav-item.cta > a {
     color: #c2a942; }
     @media (max-width: 767.98px) {
+      .owl-carousel {
+        touch-action: pan-y; /* Enables vertical scrolling */
+        -ms-touch-action: pan-y; /* For older IE versions */
+      }
       .ftco-navbar-light .navbar-nav > .nav-item.cta > a {
         padding-left: 15px;
         padding-right: 15px; } }
