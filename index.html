@@ -570,6 +570,10 @@
 		.then((data) => {
 			if (data.trim() === "Success") {
 				showCustomPopup("Your Order has been sent successfully!");
+				setTimeout(() => {
+                    const closeButton = document.querySelector('#orderModal .btn-close');
+                    closeButton.click();
+                }, 3000);
 			} else {
 				showCustomPopup("An error occurred: " + data);
 			}
@@ -641,7 +645,7 @@
 		// Automatically remove the pop-up after 2 seconds
 		setTimeout(() => {
 			document.body.removeChild(overlay); // Remove the overlay and pop-up
-		}, 2000); // 2000ms = 2 seconds
+		}, 4000); // 2000ms = 2 seconds
 	}
 	</script>
 
