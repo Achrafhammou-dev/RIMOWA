@@ -8298,6 +8298,15 @@ h1, h2, h3, h4, h5,
     .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
       color: #c2a942; }
     @media (max-width: 991.98px) {
+
+      .owl-carousel {
+        touch-action: pan-y; /* Allow vertical scrolling */
+      }
+
+      .overlay {
+        pointer-events: none; /* Disable interaction blocking */
+      }
+      
       .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
         padding-left: 0;
         padding-right: 0;
