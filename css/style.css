@@ -3583,6 +3583,9 @@ input[type="button"].btn-block {
   background-size: 100% 100%; }
 
 @media (max-width: 575.98px) {
+  .container-fluid {
+    overflow: visible; /* Avoid clipping touch events */
+  }
   .desktop{
     display: none;
   }
