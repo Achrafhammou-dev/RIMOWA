@@ -51,52 +51,53 @@
   </head>
   <body class="goto-here">
 
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-	    <div class="container">
-	      <a class="navbar-brand" href="index.html">Shop</a>
-	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
-	      </button>
-
-	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav ml-auto">
-	          <li class="nav-item active"><a href="index.html" class="nav-link" style="font-size: 20px; font-family: 'Playfair Display', serif;">Home</a></li>
-	          
-	          <li class="nav-item"><a href="about.html" class="nav-link" style="font-size: 20px; font-family: 'Playfair Display', serif;">About</a></li>
-	          
-	          <li class="nav-item"><a href="contact.html" class="nav-link" style="font-size: 20px; font-family: 'Playfair Display', serif;">Contact</a></li>
-	        </ul>
-	      </div>
-	    </div>
-	  </nav>
-    <!-- END nav -->
-
-	<section id="home-section" class="hero">
-		<div class="home-slider owl-carousel">
-		  <div class="slider-item js-fullheight">
-			<!-- <div class="overlay mobile" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.3)); z-index: 2;"></div> -->
-			<div class="container-fluid p-0" style="position: relative; z-index: 3;">
-			  <div class="row d-md-flex no-gutters slider-text align-items-center justify-content-end" data-scrollax-parent="true">
-				<img class="one-third order-md-last img-fluid" src="images/Bag-b.png" alt="" style="z-index: 1; position: relative;">
-				<div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-				  <div class="text">
-					<!-- <span class="subheading">#New Arrival</span> -->
-					<div class="horizontal" style="padding: 20px; border-radius: 10px; text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8); color: #fff;">
-						<h1 class="mb-4 mt-3">Bags Collection 2025</h1>
-						<p class="mb-4">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country.</p>
-						<p><a href="#Order_now" class="btn-custom" style="background: #ff5722; color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 5px;">Discover Now</a></p>
-					  </div>
-					  
-				  </div>
-				</div>
-			  </div>
-			</div>
+	<nav class="navbar">
+		<div class="navbar-container">
+		  <a class="navbar-logo" href="index.html">Shop</a>
+		  <button class="navbar-toggler mobile" type="button" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="toggler-line"></span>
+			<span class="toggler-line"></span>
+			<span class="toggler-line"></span>
+		  </button>
+		  
+		  <div class="navbar-menu" id="navbar-menu">
+			<ul class="navbar-list">
+			  <li class="navbar-item active"><a href="index.html" class="navbar-link">Home</a></li>
+			  <li class="navbar-item"><a href="about.html" class="navbar-link">About</a></li>
+			  <li class="navbar-item"><a href="contact.html" class="navbar-link">Contact</a></li>
+			</ul>
 		  </div>
-	  
 		</div>
-	  </section>
+	  </nav>
+	  
 	  
 
+<section id="hero-section" class="hero">
+  <div class="hero-container">
+	
+    <div class="hero-content">
+      <h1>Exclusive Bags Collection 2025</h1>
+      <p>Elevate your style with our premium collection. Designed for elegance and functionality.</p>
+      <a href="#Order_now" class="btn-discover">Discover Now</a>
+      <div class="hero-image">
+        <!-- <img src="images/Bag-b.png" alt="Exclusive Bag" /> -->
+      </div>
+    </div>
+  </div>
+</section>
+
+	  
+	  
+<script>
+document.querySelector('.navbar-toggler').addEventListener('click', function () {
+  const menu = document.querySelector('.navbar-menu');
+  menu.classList.toggle('active');
+
+  const isExpanded = this.getAttribute('aria-expanded') === 'true';
+  this.setAttribute('aria-expanded', !isExpanded);
+});
+
+</script>
 
     <section class="ftco-section ftco-no-pb ">
 		 <div class="container-xxl py-5 wow fadeInUp " data-wow-delay="0.1s">
