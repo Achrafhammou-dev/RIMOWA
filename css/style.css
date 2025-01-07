@@ -3918,12 +3918,12 @@ input[type="button"].btn-block {
   
   /* Hover and Active Effects */
   .navbar-toggler:hover .toggler-line {
-      background: #e64a19; /* Darker shade on hover */
+      background: #c2a942; /* Darker shade on hover */
   }
   
   .navbar-toggler[aria-expanded="true"] .toggler-line:nth-child(1) {
       transform: translateY(10px) rotate(45deg);
-      background: #e64a19;
+      background: #c2a942;
   }
   
   .navbar-toggler[aria-expanded="true"] .toggler-line:nth-child(2) {
@@ -3932,7 +3932,7 @@ input[type="button"].btn-block {
   
   .navbar-toggler[aria-expanded="true"] .toggler-line:nth-child(3) {
       transform: translateY(-10px) rotate(-45deg);
-      background: #e64a19;
+      background: #c2a942;
   }
   
   /* Responsive Styles */

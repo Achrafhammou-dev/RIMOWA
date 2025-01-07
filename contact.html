@@ -28,25 +28,37 @@
   </head>
   <body class="goto-here">
 
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-	    <div class="container">
-	      <a class="navbar-brand" href="index.html">Shop</a>
-	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
-	      </button>
-
-	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav ml-auto">
-	          <li class="nav-item active"><a href="index.html" class="nav-link" style="font-size: 20px; font-family: 'Playfair Display', serif;">Home</a></li>
-	          
-	          <li class="nav-item"><a href="about.html" class="nav-link" style="font-size: 20px; font-family: 'Playfair Display', serif;">About</a></li>
-	          
-	          <li class="nav-item"><a href="contact.html" class="nav-link" style="font-size: 20px; font-family: 'Playfair Display', serif;">Contact</a></li>
-	        </ul>
-	      </div>
-	    </div>
-	  </nav>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <a class="navbar-logo" href="index.html">Shop</a>
+        <button class="navbar-toggler mobile" type="button" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="toggler-line"></span>
+        <span class="toggler-line"></span>
+        <span class="toggler-line"></span>
+        </button>
+        
+        <div class="navbar-menu" id="navbar-menu">
+        <ul class="navbar-list">
+          <li class="navbar-item"><a href="index.html" class="navbar-link">Home</a></li>
+          <li class="navbar-item"><a href="about.html" class="navbar-link">About</a></li>
+          <li class="navbar-item active"><a href="contact.html" class="navbar-link">Contact</a></li>
+        </ul>
+        </div>
+      </div>
+      </nav>
     <!-- END nav -->
+
+
+    <script>
+      document.querySelector('.navbar-toggler').addEventListener('click', function () {
+        const menu = document.querySelector('.navbar-menu');
+        menu.classList.toggle('active');
+      
+        const isExpanded = this.getAttribute('aria-expanded') === 'true';
+        this.setAttribute('aria-expanded', !isExpanded);
+      });
+      
+      </script>
 
     <div class="hero-wrap hero-bread" style="background-image: url('images/bg_6.jpg');">
       <div class="container">
